@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-10T17:52:44 IST" name="Test Suite for Buildout" finished-at="2025-06-10T17:53:19 IST" duration-ms="35058">
+    <groups>
+    </groups>
+    <test started-at="2025-06-10T17:52:44 IST" name="Test Cases for Buildout" finished-at="2025-06-10T17:53:19 IST" duration-ms="35058">
+      <class name="scraper.testcases.TestCases">
+        <test-method signature="testCase01()[pri:0, instance:scraper.testcases.TestCases@7383eae2]" started-at="2025-06-10T17:52:44 IST" name="testCase01" description="Go to &quot;https://www.scrapethissite.com/pages&quot; website and click on &quot;Hockey Teams: Forms, Searching and Pagination&quot;
+* 1. Iterate through the table and collect the Team Name, Year and Win % for
+* the teams with Win % less than 40% (0.40)
+* 2. Iterate through 4 pages of this data and store it in an ArrayList
+* 3. Convert the ArrayList object to a JSON file named hockey-team-data.json.
+* Each Hashmap object should contain:
+* a. Epoch Time of Scrape
+* b. Team Name
+* c. Year
+* d. Win %" finished-at="2025-06-10T17:52:57 IST" duration-ms="13062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase01 -->
+        <test-method signature="testCase02()[pri:0, instance:scraper.testcases.TestCases@7383eae2]" started-at="2025-06-10T17:52:57 IST" name="testCase02" description="Go to &quot;https://www.scrapethissite.com/pages&quot; website and click on &quot;Oscar Winning Films&quot;
+* 1. Click on each year present on the screen and find the top 5 movies on the
+* list - store in an ArrayList.
+* 2. Keep a Boolean variable &quot;isWinner&quot; which will be true only for the best
+* picture winner of that year.
+* 3. Keep a variable to maintain the year from which the data is scraped
+* 4. Convert the ArrayList object to a JSON file named oscar-winner-data.json.
+* Each HashMap object should contain:
+* a. Epoch Time of Scrape
+* b. Year
+* c. Title
+* d. Nomination
+* e. Awards
+* f. isWinner
+* 5. Store the file in the output folder in the root directory. Assert using
+* TestNG that the file is present and not empty" finished-at="2025-06-10T17:53:19 IST" duration-ms="21615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase02 -->
+      </class> <!-- scraper.testcases.TestCases -->
+    </test> <!-- Test Cases for Buildout -->
+  </suite> <!-- Test Suite for Buildout -->
+</testng-results>
